@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class AddPostAtColumnToPostsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('posts', function (Blueprint $table) {
+            $table->timestamp('post_at')->useCurrent();
+            $table->softDeletes();
+        });
+
+        $posts = \App\Post::all();
+        foreach ($posts as $post) {
+            $post->post_at = $post->created_at;
+            $post->save();
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('posts', function (Blueprint $table) {
+            $table->dropColumn(['deleted_at', 'post_at']);
+        });
+    }
+}

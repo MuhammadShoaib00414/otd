@@ -1,0 +1,1 @@
+@include('components.receipts.exportPurchase', ['receipt' => $receipt, 'page' => $page,'isSimple' => true, 'showGroups' => request()->user()->is_admin])

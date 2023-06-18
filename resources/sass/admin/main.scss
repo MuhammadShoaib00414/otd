@@ -1,0 +1,141 @@
+$theme-colors: (
+  "primary": #1b2c41,
+  "info": #1c64bd,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.admin-header {
+    background-color: #1b2c41;
+    color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    a {
+        color: #fff;
+    }
+}
+
+.admin-nav {
+    padding: 66px 0 0;
+    background-color: #f3f4f6;
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+    border-right: 1px solid #e0e2e7;
+
+    .nav-link {
+        color: #1b2c41;
+
+        .fas {
+            color: #686f77;
+            margin-right: 0.2em;
+        }
+
+        &:hover {
+            background-color: #eaecf0;
+        }
+    }
+
+    .active {
+        color: #1c64bd;
+        background-color: #eaecf0;
+
+        .fas {
+            color: #1c64bd;
+        }
+    }
+
+    .admin-nav-heading {
+        margin: 1.5em 0 0.5em 1.25em;
+        color: #8a8a8a;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+}
+
+.hoverable {
+    cursor: pointer;
+}
+.ribbon.top-right {
+    top: -3px;
+    right: -6px;
+}
+.ribbon {
+    position: absolute;
+    z-index: 100;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.ribbon.top-right.ribbon-success > small {
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5CB85C', endColorstr='#FF3D8B3D');
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjYjg1YyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNkOGIzZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5cb85c), color-stop(100%, #3d8b3d));
+    background-image: -moz-linear-gradient(top, #5cb85c 0%, #3d8b3d 100%);
+    background-image: -webkit-linear-gradient(top, #5cb85c 0%, #3d8b3d 100%);
+    background-image: linear-gradient(to bottom, #5cb85c 0%, #3d8b3d 100%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 #3d8b3d;
+    font-weight: bold;
+    font-size: 65%;
+    color: #fff;
+    background-color: #5cb85c;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 3px 6px -3px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 6px -3px rgb(0 0 0 / 50%);
+    top: 16px;
+    left: 27px;
+}
+.ribbon.top-right.ribbon-success > small:before, .ribbon.top-right.ribbon-success > small:after {
+    bottom: -3px;
+    border-top: 3px solid #163216;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.ribbon.top-right.ribbon-success > small:before {
+    left: 0;
+}
+.ribbon.top-right.ribbon-success > small:before, .ribbon.top-right.ribbon-success > small:after {
+    position: absolute;
+    content: " ";
+}
+.ribbon.top-right.ribbon-success > small:before, .ribbon.top-right.ribbon-success > small:after {
+    bottom: -3px;
+    border-top: 3px solid #163216;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.ribbon.top-right.ribbon-success > small:after {
+    right: 0;
+}
+.ribbon.top-right.ribbon-success > small:before, .ribbon.top-right.ribbon-success > small:after {
+    position: absolute;
+    content: " ";
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-none{
+    border: none;
+    color: white;
+}
+.select-color{
+    width: 20%;
+    height: 50px;
+}

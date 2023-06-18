@@ -1,0 +1,1 @@
+<x-question-mark style="height: 20px; margin-bottom: 2px;" data-toggle="tooltip" data-placement="top" title="{{ $subtext }}"></x-question-mark>

@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'Add Expense' => 'Añadir gastos',
+    'Allocated' => 'Asignado',
+    'Amount' => 'Cantidad',
+    'amount' => 'cantidad',
+    'Attach receipt' => 'Adjuntar recibo',
+    'Budget for' => 'Presupuesto para',
+    'Budget' => 'Presupuesto',
+    'Budgets' => 'Presupuestos',
+    'Category' => 'Categoría',
+    'category' => 'categoría',
+    'Change/upload different receipt' => 'Cambiar/cargar un recibo diferente',
+    'Choose file' => 'Seleccionar archivo',
+    'Currently attached receipt:' => 'Recibo adjunto actualmente:',
+    'date' => 'fecha',
+    'Delete this expense?' => '¿Eliminar este gasto?',
+    'description' => 'descripción',
+    'Edit Expense' => 'Editar gasto',
+    'Is this for an event?' => '¿Es esto para un evento?',
+    'No category' => 'Ninguna Categoria',
+    'Open' => 'Abrir',
+    'Remaining' => 'Restante',
+    'Select an event' => 'Seleccionar un evento',
+    'Spent' => 'Gastado',
+    'Uncategorized' => 'Sin categorizar',
+];

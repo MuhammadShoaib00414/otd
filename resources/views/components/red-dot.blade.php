@@ -1,0 +1,1 @@
+<span aria-hidden="true" style="vertical-align: top; font-size:0.7em; transform: translateX(-17%); height: 8px; width: 5px; border-radius: 50%; display: inline-block;" class="badge badge-danger"></span>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Revolvapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- revolvapp css -->
+    <link rel="stylesheet" href="css/revolvapp.min.css" />
+</head>
+<body>
+
+    <!-- element -->
+    <div id="myemail"></div>
+
+    <!-- revolvapp js -->
+    <script src="js/revolvapp.min.js"></script>
+
+    <!-- inititalization -->
+    <script>
+        $RE('#myemail', {
+            path: '/revolvapp-dist/',
+            template: '/my-folder/template.html'
+        });
+    </script>
+</body>
+</html>

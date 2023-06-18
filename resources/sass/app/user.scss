@@ -1,0 +1,164 @@
+// 
+// 
+// user.scss
+//
+//
+.font-brand {
+    color: #f29181;
+}
+
+.font-secondary-brand {
+    color: hsl(213, 42%, 18%);
+}
+
+.font-brand-white {
+    color: #fbfbfb;
+}
+
+.font-dark {
+    color: #495057;
+}
+
+.bg-homescreen {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url('/images/homescreen-bg.png');
+    background-size: cover;
+    background-position: center;
+
+    padding: 13em 0 10em 0;
+
+    @media(max-width: 455px) {
+        padding: 6em 0.5em 5em 0.5em;
+    }
+}
+
+.border-top-brand {
+    border-top: 2px solid #f29181;
+}
+
+.swirl-bg {
+    background: rgba(0, 0, 0, 0) url("/images/swirl.png") repeat scroll 0% 0%;
+}
+
+.bg-light-brand {
+    background-color: #fdf7f5;
+}
+
+.bg-lightest-brand {
+    background-color: hsl(213, 11%, 95%);;
+}
+
+.bg-secondary-brand {
+    background-color: hsl(213, 42%, 18%);
+
+    color: hsl(213, 5%, 98%);
+
+    a {
+        color: hsl(213, 5%, 98%);
+    }
+
+    .dropdown-item {
+        color: hsl(213, 85%, 5%);
+    }
+}
+
+.bg-light-secondary-brand {
+    background-color: hsla(213, 42%, 85%, 1);
+}
+
+.bg-light-brand-swirl {
+    background: rgba(0, 0, 0, 0) url("/images/swirl-brand.png") repeat scroll 0% 0%;
+}
+
+.bg-brand {
+    background-color: #f29181;
+}
+
+.btn-brand-blue {
+    background-color: #1a2b40;
+}
+
+.btn-primary {
+    color: #fefcfc;
+}
+
+.no-underline:hover {
+    text-decoration: none !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #544c4b;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #544c4b;
+}
+
+.checkable-tag {
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .box {
+        margin-right: 1em;
+        border: 1px solid #eee;
+        padding: 0 0.5em;
+        border-radius: 3px;
+        background-color: #fff;
+    }
+
+    &:hover .box {
+        background-color: #eee;
+        cursor: pointer;
+    }
+}
+
+.keyword-tag {
+    background-color: #f8f8f8;
+    border: 1px solid #eaebed;
+    padding: 0.15em 0.25em 0.15em 0.5em;
+
+    i {
+        color: #a5abb7;
+    }
+
+    &:hover {
+        text-decoration: none;
+        background-color: #edf2f8;
+        border: 1px solid #dee0e4;
+
+        i {
+            color: #6f89a5;
+        }
+    }
+}
+
+.social-icon-circle {
+    background-color: #f29181;
+    width: 1.8em;
+    height: 1.8em;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.8em;
+    border-radius: 50%;
+    padding-top: 0.125em;
+    color: #fff;
+
+    &:hover {
+        background-color: #d59c92;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.light-hover-bg {
+    &:hover {
+        text-decoration: none;
+        background-color: hsla(220, 12%, 97%, 1);
+    }
+}

@@ -1,0 +1,12 @@
+Optimizations Todo:
+
+- Cache images and scripts
+- Store settings in localStorage (and reload settings in AJAX call after app loads to get up-to-date version)
+- Delay localization and settings AJAX calls until *after* everything has loaded
+- Store the feeds (for dashboard and groups) in localStorage with a timestamp
+    - if timestamp is within 60 seconds, don't load feed at all, just use the one in localStorage
+    - if > 60 seconds, but less than 2 hrs, show localStorage feed, but request posts made since timestamp from DB
+    - if > 2 hrs, reload full feed
+    - figure out how to deal with people reordering posts
+- Store group.show objects in localStorage, to immediate show group menu and header, while waiting for AJAX /api/groups/{slug} to load
+- Links in interactive header images should be router-links if they link within the SPA
